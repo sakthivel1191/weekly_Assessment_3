@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+
+# Generated model checkpoints
+artifacts/training_checkpoints/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+
+# Trained transformer model files
+artifacts/transformer/
+
+# Virtual environment
+.venv/
+
+# Training checkpoints
+artifacts/training_checkpoints/
