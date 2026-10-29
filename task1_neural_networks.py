@@ -5,12 +5,10 @@ import torch
 def relu(x):
     return np.maximum(0, x)
 def sigmoid(x):
-    # Clip values to avoid overflow in exp()
     x = np.clip(x, -500, 500)
     return 1 / (1 + np.exp(-x))
 
 def softmax(x):
-    # Subtract the maximum for numerical stability
     x = np.array(x, dtype=float)
     exp_values = np.exp(x - np.max(x))
     return exp_values / np.sum(exp_values)
